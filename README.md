@@ -53,3 +53,6 @@ Website ini menggunakan FakeStore API untuk mengambil data produk.
 
 ```bash
 https://fakestoreapi.com/products
+
+# vidio presentasi youtube
+https://youtu.be/hjhlwtTR2ok?si=kMe87IgMvSrrn9b-
