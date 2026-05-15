@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Apenkstore</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- NAVBAR -->
+    <!-- ========================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            Apenkstore
+
+        </div>
+
+
+        <!-- SEARCH -->
+        <div class="nav-search">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk..."
+            >
+
+        </div>
+
+
+        <!-- ICON -->
+        <div class="nav-icons">
+
+            <!-- DARK MODE -->
+            <button id="darkBtn">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <!-- CART -->
+            <div class="cart" id="cartBtn">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <span id="cart-count">
+                    0
+                </span>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ========================= -->
+    <!-- HERO -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                E-Commerce Modern
+            </h1>
+
+            <p>
+                Belanja produk terbaik dengan tampilan futuristik modern.
+            </p>
+
+            <button>
+                Mulai Belanja
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- FILTER -->
+    <!-- ========================= -->
+
+    <section class="filter-section">
+
+        <select id="categoryFilter">
+
+            <option value="all">
+
+                Semua Kategori
+
+            </option>
+
+        </select>
+
+    </section>
+
+
+    <!-- ========================= -->
+    <!-- LOADING -->
+    <!-- ========================= -->
+
+    <div id="loading">
+
+        Mengambil data produk...
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- ERROR -->
+    <!-- ========================= -->
+
+    <div id="error"></div>
+
+
+    <!-- ========================= -->
+    <!-- PRODUCT -->
+    <!-- ========================= -->
+
+    <section
+        class="products"
+        id="productContainer"
+    ></section>
+
+
+    <!-- ========================= -->
+    <!-- PRODUCT DETAIL MODAL -->
+    <!-- ========================= -->
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span
+                class="close"
+                id="closeModal"
+            >
+                &times;
+            </span>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- CART MODAL -->
+    <!-- ========================= -->
+
+    <div
+        class="cart-modal"
+        id="cartModal"
+    >
+
+        <div class="cart-content">
+
+            <span id="closeCart">
+
+                &times;
+
+            </span>
+
+            <h2>
+                Keranjang Belanja
+            </h2>
+
+
+            <!-- CART ITEM -->
+            <div id="cartItems"></div>
+
+
+            <!-- FOOTER -->
+            <div class="cart-footer">
+
+                <h3 id="totalPrice">
+
+                    Total: $0
+
+                </h3>
+
+                <button id="checkoutBtn">
+
+                    Checkout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================= -->
+    <!-- SCRIPT -->
+    <!-- ========================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
